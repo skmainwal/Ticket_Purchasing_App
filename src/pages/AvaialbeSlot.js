@@ -17,15 +17,17 @@ const AvaialbeSlot = () => {
   ]);
 
   useEffect(() => {
+    setFirstColumnSeats(()=>[...firstColumnSeat])
+    setSecondsColumnSeats(()=>[...secondColumnSeat])
+    setSelectedSeat([])
   
     return ()=>{
       // dispatch(setSelectedSeatsHandler([]))
-      console.log("🚀 ~ file: AvaialbeSlot.js:31 ~ return ~ firstColumnSeat", firstColumnSeat)
-      setFirstColumnSeats(()=>[...firstColumnSeat])
-      setSecondsColumnSeats(()=>[...secondColumnSeat])
-      setSelectedSeat([])
+      // setFirstColumnSeats(()=>[...firstColumnSeat])
+      // setSecondsColumnSeats(()=>[...secondColumnSeat])
+      // setSelectedSeat([])
     }
-  }, [firstColumnSeat,secondColumnSeat]);
+  }, []);
 
   const navigate = useNavigate();
 

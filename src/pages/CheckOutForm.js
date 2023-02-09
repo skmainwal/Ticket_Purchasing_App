@@ -63,7 +63,7 @@ const CheckOutForm = () => {
           borderRadius="5px"
           boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
         >
-          <Center></Center>
+          <Center>Checkout</Center>
           <Center mt="10px" mb="10px">
             <Card p="5px">
               <Center>
